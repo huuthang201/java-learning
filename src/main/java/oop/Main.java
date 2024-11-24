@@ -2,11 +2,15 @@ package oop;
 
 public class Main {
     public static void main(String[] args) {
-        Student bepiu = new Student();
-        bepiu.setName("Bep iu");
-        bepiu.setAge(20);
+        Dog dog = new Dog();
+        Bird bird = new Bird();
+        Fish fish = new Fish();
+        Duck duck = new Duck();
 
-        System.out.println("Name: " + bepiu.getName());
-        System.out.println("Age: " + bepiu.getAge());
+        ZooManager.displayAnimalActions(dog);
+        ZooManager.displayAnimalActions(bird);
+        ZooManager.displayAnimalActions(fish);
+        ZooManager.displayAnimalActions(duck);
+        ZooManager.feedAnimal(duck);
     }
 }
