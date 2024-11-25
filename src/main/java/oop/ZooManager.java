@@ -1,5 +1,7 @@
 package oop;
 
+import org.jetbrains.annotations.NotNull;
+
 public class ZooManager {
     static void displayAnimalActions(Animal animal) {
         if (animal instanceof Flyable) {
@@ -14,7 +16,7 @@ public class ZooManager {
         animal.makeSound();
     }
 
-    static void feedAnimal(Animal animal) {
+    static void feedAnimal(@org.jetbrains.annotations.NotNull Animal animal) {
         String name = animal.getName() == null ? "Unknown" : animal.getName();
         String type = animal.getClass().getSimpleName();
         System.out.println("Feeding " + name + " the " + type);

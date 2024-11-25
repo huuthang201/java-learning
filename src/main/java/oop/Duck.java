@@ -1,6 +1,10 @@
 package oop;
 
 public class Duck extends Animal implements Walkable, Flyable, Swimmable {
+
+    public Duck(String name, int age) {
+        super(name, age);
+    }
     @Override
     public void makeSound() {
         System.out.println("Duck quacks");
